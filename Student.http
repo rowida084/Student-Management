@@ -1,0 +1,36 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@baseUrl = https://localhost:7035
+
+### =========================
+### STUDENTS
+### =========================
+
+### Success: Get all students
+GET {{baseUrl}}/api/Students
+
+### Failure: Student ID does not exist
+GET {{baseUrl}}/api/Students/999999
+
+
+### =========================
+### COURSES
+### =========================
+
+### Success: Get all courses
+GET {{baseUrl}}/api/Courses
+
+### Failure: Course ID does not exist
+GET {{baseUrl}}/api/Courses/999999
+
+
+### =========================
+### ENROLLMENTS
+### =========================
+
+### Success: Get all enrollments
+GET {{baseUrl}}/api/Enrollments
+
+### Failure: Enrollment ID does not exist
+GET {{baseUrl}}/api/Enrollments/999999
+
